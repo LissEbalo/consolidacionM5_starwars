@@ -1,0 +1,113 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: rgb(34, 193, 195);
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(66, 112, 227, 1) 27%,
+    rgba(56, 137, 217, 1) 41%,
+    rgba(65, 113, 226, 1) 67%,
+    rgba(92, 45, 253, 1) 100%
+  );
+  margin: 0;
+  padding: 20px;
+}
+.box {
+  text-align: left;
+  margin-left: 50px;
+}
+.number {
+  position: absolute;
+  display: inline-block;
+  top: calc(50%);
+  text-align: start;
+  font-size: 14px;
+  font-weight: bold;
+  color: #a3a1b0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+  left: -60px;
+}
+.characters {
+  display: flex;
+  position: relative;
+}
+.characters:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  top: 50%;
+  left: -13px;
+  border-radius: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  position: relative;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #00f7ff;
+  text-shadow: 7px 4px 5px blue;
+}
+
+.secciones {
+  text-align: start;
+  position: relative;
+}
+.secciones:before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: calc(100% + 10px);
+  background-color: #000000;
+  left: -5px;
+  border-radius: 4px;
+}
+
+.rango {
+  min-width: 270px;
+  width: 270px;
+  padding: 10px;
+  margin: 10px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(65, 113, 226, 1) 51%,
+    rgba(92, 45, 253, 1) 100%
+  );
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #17191b;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-style: dotted;
+  border-width: 3px;
+}
+
+.personajes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.personaje {
+  background-color: rgb(25, 0, 88);
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 5px;
+  border-style: outset;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.personaje h2 {
+  margin: 0;
+  font-size: 18px;
+}
